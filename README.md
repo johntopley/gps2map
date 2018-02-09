@@ -12,6 +12,10 @@ A [Google Maps JavaScript API key](https://developers.google.com/maps/documentat
 ## Usage
 ```
 gps2map generate <input.gpx|.kml|.tcx> <output.html>
+
+Options:
+  [--markers=N]  # The number of markers to plot on the map
+                 # Default: 15
 ```
 
 ## Licence
