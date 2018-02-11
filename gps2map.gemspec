@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/johntopley/gps2map'
   s.license     = 'MIT'
   s.required_ruby_version = '>= 2.4.0'
-  
+
   s.add_runtime_dependency 'nokogiri', '~> 1.8.0'
   s.add_runtime_dependency 'thor', '~> 0.20.0'
   s.add_development_dependency 'bundler', '~> 1.16'
