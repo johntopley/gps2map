@@ -121,6 +121,8 @@ module GPS2Map
       File.open(output_file, 'w') { |fi| fi.write(data) }
     rescue Errno::EACCES
       abort("Permission denied when attemping to write output file '#{output_file}'")
+    rescue Errno::ENOENT
+      abort("Output file path '#{output_file}' doesn't exist.")
     end
   end
 end
