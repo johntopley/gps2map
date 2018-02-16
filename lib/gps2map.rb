@@ -117,6 +117,8 @@ module GPS2Map
 
     def write_output_file(output_file, data)
       File.open(output_file, 'w') { |fi| fi.write(data) }
+    rescue Errno::EACCES
+      abort("Permission denied when attemping to write output file '#{output_file}'")
     end
   end
 end
