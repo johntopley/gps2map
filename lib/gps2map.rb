@@ -79,6 +79,8 @@ module GPS2Map
         doc = Nokogiri::XML(fi)
         doc.css(selector).each { |el| yield(el) }
       end
+    rescue Errno::EACCES
+      abort("Permission denied when attemping to read input file '#{input_file}'")
     rescue Errno::ENOENT
       abort("Input file '#{input_file}' doesn't exist.")
     end
