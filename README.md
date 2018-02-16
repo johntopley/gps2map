@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/gps2map.svg)](https://badge.fury.io/rb/gps2map)
+
 # GPS2Map
 Creates a Google Map from an input file containing GPS co-ordinates ([GPX](https://en.wikipedia.org/wiki/GPS_Exchange_Format), [KML](https://en.wikipedia.org/wiki/Keyhole_Markup_Language) or [TCX](https://en.wikipedia.org/wiki/Training_Center_XML) format).
 
