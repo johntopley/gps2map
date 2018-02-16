@@ -79,6 +79,8 @@ module GPS2Map
         doc = Nokogiri::XML(fi)
         doc.css(selector).each { |el| yield(el) }
       end
+    rescue Errno::ENOENT
+      abort("Input file '#{input_file}' doesn't exist.")
     end
 
     def parse_gpx(input_file)
