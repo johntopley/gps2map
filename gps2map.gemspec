@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.required_ruby_version = '>= 2.5.0'
 
-  s.add_runtime_dependency 'nokogiri', '~> 1.8.0'
+  s.add_runtime_dependency 'nokogiri', '>= 1.8', '< 1.11'
   s.add_runtime_dependency 'thor', '~> 0.20.0'
   s.add_development_dependency 'bundler', '~> 1.16'
   s.add_development_dependency 'rake', '~> 12.3'
